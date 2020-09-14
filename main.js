@@ -7,8 +7,13 @@ bot.on('ready', () => {
     bot.user.setActivity('OPMine-PServer' , { type: "WATCHING"})
         .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
         .catch(console.error);
-
-bot.on('message', message =>{
+    bot.user.setStatus('online')
+        .then(console.log)
+        .catch(console.error);
+})       
+        
+        
+        bot.on('message', message =>{
     if (message.author.bot) return;
 
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
@@ -25,9 +30,7 @@ bot.on('message', message =>{
         } catch {
             message.reply(`Sorry <@${message.autor.username}> Ich kann momentan nicht helfen :c`)
         }
-    } else {
-        if
     }
 })
 
-bot.login(process.env.token); 
+bot.login(process.env.token);
