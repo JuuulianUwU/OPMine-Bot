@@ -4,17 +4,18 @@
 
 
 const Discord = require('discord.js'); 
+const token = 'NzU0Njc4MzI2Nzg1ODY3ODE2.X14O9g.aOxsClA8RXoXdOKjbKKLpEjSiqM';
 const bot = new Discord.Client();
 const prefix = '.'; 
 
 bot.on('ready', () => {
-    console.log('OPMine-Bot ist jetzt Online!');
-    bot.user.setActivity('OPMine-PServer' , { type: "WATCHING"})
-        .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
-        .catch(console.error);
-    bot.user.setStatus('online')
-        .then(console.log)
-        .catch(console.error);
+        console.log('OPMine-Bot ist jetzt Online!');
+ client.user.setActivity('discord.js', { type: 'PLAYING' })
+    .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
+    .catch(console.error);
+client.user.setPresence({ activity: { name: 'Replacethis with the games name' }, status: 'idle' })
+    .then(console.log)
+    .catch(console.error);
 })       
         
         
@@ -38,4 +39,4 @@ bot.on('ready', () => {
     }
 })
 
-bot.login(process.env.token);
+bot.login('NzU0Njc4MzI2Nzg1ODY3ODE2.X14O9g.aOxsClA8RXoXdOKjbKKLpEjSiqM');
