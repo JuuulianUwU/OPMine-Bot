@@ -55,10 +55,21 @@ bot.on('ready', () => {
             message.channel.send(testEmbed);
         } catch {
             message.reply(`Sorry <@${message.autor.username}> Ich kann momentan nicht helfen :c`)
+        }
+    }
+    
+    if(command === 'credit') {
+        const testEmbed = new Discord.MessageEmbed()
+            .setTitle('Discord Bot by OVT Ꭻᥙᥙᥙᥣเᥲᥒ#7339')
+            .setColor(0x45B8AC)
+
+        try {
+            message.channel.send(testEmbed);
+        } catch {
+            message.reply(`Sorry <@${message.autor.username}> Ich kann momentan nicht helfen :c`)
+        }
     }
 
-
-    }
 })
 
 bot.login(process.env.token);
