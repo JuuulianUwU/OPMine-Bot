@@ -8,7 +8,7 @@ const bot = new Discord.Client();
 const prefix = '.'; 
 
 bot.on('ready', () => {
-        cconsole.log('OPMine-Bot ist jetzt Online!');
+        console.log('OPMine-Bot ist jetzt Online!');
         bot.user.setActivity('OPMine-PServer' , { type: "WATCHING"})
             .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
             .catch(console.error);
