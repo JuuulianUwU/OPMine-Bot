@@ -58,9 +58,9 @@ bot.on('ready', () => {
         }
     }
     
-    if(command === 'credit') {
+    if(command === 'fortnite') {
         const testEmbed = new Discord.MessageEmbed()
-            .setTitle('Discord Bot by OVT Ꭻᥙᥙᥙᥣเᥲᥒ#7339')
+            .setTitle(`Ohhhje.... Ich glaube <@${message.autor.username}> hat die Kontrolle über sein Leben verloren.`)
             .setColor(0x45B8AC)
 
         try {
