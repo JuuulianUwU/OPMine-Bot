@@ -9,7 +9,7 @@ const prefix = '.';
 
 bot.on('ready', () => {
         console.log('OPMine-Bot ist jetzt Online!');
-       bot.user.setActivity('OPMine-PServer', { type: "STREAMING"}).catch(console.error);
+       bot.user.setActivity('OPMine-PServer', { type: "WATCHING"}).catch(console.error);
 })       
         
         
