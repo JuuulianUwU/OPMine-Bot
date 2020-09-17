@@ -52,6 +52,12 @@ bot.on('ready', () => {
             .setTitle('Discord Bot by OVT Ꭻᥙᥙᥙᥣเᥲᥒ#7339')
             .setFooter('⮞ Developed & Designed by _7u ⮜')
 
+        try {
+            message.channel.send(testEmbed);
+        } catch {
+            message.reply(`Sorry <@${message.autor.username}> Ich kann momentan nicht helfen :c`)
+    }
+
 
     }
 })
