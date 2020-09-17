@@ -42,7 +42,7 @@ bot.on('ready', () => {
     if(command === 'commands') {
         const testEmbed = new Discord.MessageEmbed()
             .setTitle('⮞Alle Commands⮜')
-            .addField('.team - Siehe das unser Serverteam')
+            .setDescription('.team » Liste des Serverteams ')
             .setColor(0x45B8AC)
 
         try {
