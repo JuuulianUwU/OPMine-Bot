@@ -49,6 +49,7 @@ bot.on('ready', () => {
     if(command === 'credit') {
         const testEmbed = new Discord.MessageEmbed()
             .setTitle('Discord Bot by OVT Ꭻᥙᥙᥙᥣเᥲᥒ#7339')
+            .setColor(0x45B8AC)
 
         try {
             message.channel.send(testEmbed);
