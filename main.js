@@ -49,7 +49,6 @@ bot.on('ready', () => {
     if(command === 'credit') {
         const testEmbed = new Discord.MessageEmbed()
             .setTitle('Discord Bot by OVT Ꭻᥙᥙᥙᥣเᥲᥒ#7339')
-            .setFooter('⮞ Developed & Designed by _7u ⮜')
 
         try {
             message.channel.send(testEmbed);
