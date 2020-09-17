@@ -4,7 +4,6 @@
 
 
 const Discord = require('discord.js'); 
-const token = 'NzU0Njc4MzI2Nzg1ODY3ODE2.X14O9g.aOxsClA8RXoXdOKjbKKLpEjSiqM';
 const bot = new Discord.Client();
 const prefix = '.'; 
 
@@ -39,4 +38,4 @@ client.user.setPresence({ activity: { name: 'Replacethis with the games name' },
     }
 })
 
-bot.login('NzU0Njc4MzI2Nzg1ODY3ODE2.X14O9g.aOxsClA8RXoXdOKjbKKLpEjSiqM');
+bot.login(process.env.token);
