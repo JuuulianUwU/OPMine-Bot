@@ -37,12 +37,21 @@ bot.on('ready', () => {
             .setTitle('⮞   Alle Commands   ⮜')
             .setDescription('.team » Liste des Serverteams ', '.commands » siehe alle commands')
             .setColor(0x45B8AC)
+            .setFooter('⮞ Developed & Designed by _7u ⮜')
 
         try {
             message.channel.send(testEmbed);
         } catch {
             message.reply(`Sorry <@${message.autor.username}> Ich kann momentan nicht helfen :c`)
         }
+
+    }
+
+    if(command === 'credit') {
+        const testEmbed = new Discord.MessageEmbed()
+            .setTitle('```diff Test ```')
+            .setFooter('⮞ Developed & Designed by _7u ⮜')
+
 
     }
 })
