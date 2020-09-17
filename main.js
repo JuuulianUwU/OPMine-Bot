@@ -37,7 +37,6 @@ bot.on('ready', () => {
             .setTitle('⮞   Alle Commands   ⮜')
             .setDescription('.team » Liste des Serverteams ', '.commands » siehe alle commands')
             .setColor(0x45B8AC)
-            .setFooter('⮞ Developed & Designed by _7u ⮜')
 
         try {
             message.channel.send(testEmbed);
