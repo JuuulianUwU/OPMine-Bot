@@ -9,12 +9,14 @@ const prefix = '.';
 
 bot.on('ready', () => {
         console.log('OPMine-Bot ist jetzt Online!');
-        bot.user.setActivity('OPMine-PServer' , { type: "WATCHING"})
-            .then(presence => console.log(`Activity set to ${presence.activities[0].username}`))
-            .catch(console.error);
-        bot.user.setStatus("idle")
-            .then(console.log)
-            .catch(console.error);
+        bot.user.setActivity('OPMine-PServer' , {
+             type: "WATCHING"
+        })
+        .then(presence => console.log(`Activity set to ${presence.activities[0].username}`))
+        .catch(console.error);
+    bot.user.setStatus("idle")
+        .then(console.log)
+        .catch(console.error);
 })       
         
         
