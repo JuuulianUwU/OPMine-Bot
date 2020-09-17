@@ -8,13 +8,13 @@ const bot = new Discord.Client();
 const prefix = '.'; 
 
 bot.on('ready', () => {
-        console.log('OPMine-Bot ist jetzt Online!');
- client.user.setActivity('discord.js', { type: 'PLAYING' })
-    .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
-    .catch(console.error);
-client.user.setPresence({ activity: { name: 'Replacethis with the games name' }, status: 'idle' })
-    .then(console.log)
-    .catch(console.error);
+        cconsole.log('OPMine-Bot ist jetzt Online!');
+        bot.user.setActivity('OPMine-PServer' , { type: "WATCHING"})
+            .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
+            .catch(console.error);
+        bot.user.setStatus("idle")
+            .then(console.log)
+            .catch(console.error);
 })       
         
         
