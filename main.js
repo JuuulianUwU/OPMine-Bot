@@ -49,7 +49,7 @@ bot.on('ready', () => {
 
     if(command === 'credit') {
         const testEmbed = new Discord.MessageEmbed()
-            .setTitle('**`⮞ Developed & Designed by _7u ⮜`**')
+            .setTitle('Discord Bot by OVT Ꭻᥙᥙᥙᥣเᥲᥒ#7339')
             .setFooter('⮞ Developed & Designed by _7u ⮜')
 
 
