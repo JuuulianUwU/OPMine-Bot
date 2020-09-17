@@ -49,7 +49,7 @@ bot.on('ready', () => {
 
     if(command === 'credit') {
         const testEmbed = new Discord.MessageEmbed()
-            .setTitle('```diff Test ```')
+            .setTitle('**`⮞ Developed & Designed by _7u ⮜`**')
             .setFooter('⮞ Developed & Designed by _7u ⮜')
 
 
